@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_grey"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".Login">
+
+    <LinearLayout
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/ll1"
+        android:id="@+id/ll0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:id="@+id/imgV1_login"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="-30dp"
+            android:layout_marginTop="-30dp"
+            android:src="@drawable/high_school_students"
+            android:transitionName="logo_anim"
+            />
+        <TextView
+            android:id="@+id/tv1_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HELLO THERE\nWELCOME BACK"
+            android:textSize="45sp"
+            android:layout_marginTop="-30dp"
+            android:fontFamily="@font/nyctaghina_bold"
+            android:textColor="@color/black"
+            android:transitionName="text_anim"
+            />
+        <TextView
+            android:id="@+id/tv2_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login to Continue"
+            android:textSize="20sp"
+            android:fontFamily="@font/titillium_web_light"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"
+            android:transitionName="text_anim2"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        app:layout_constraintTop_toBottomOf="@id/ll0"
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        app:layout_constraintVertical_bias="0.3"
+        >
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/idnumber_txt_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ID Number"
+            app:boxBackgroundColor="@color/transparent"
+            app:boxStrokeColor="@color/black"
+            app:hintTextColor="@color/black"
+            android:textColorHint="@color/black"
+            app:passwordToggleTint="@color/black"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:transitionName="usr_name_anim"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/idnumber_edit_txt_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@color/black"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password_txt_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            app:boxBackgroundColor="@color/transparent"
+            app:boxStrokeColor="@color/black"
+            app:hintTextColor="@color/black"
+            android:textColorHint="@color/black"
+            app:passwordToggleEnabled="true"
+            app:errorIconDrawable="@null"
+            app:passwordToggleTint="@color/black"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:transitionName="pass_anim"
+
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password_edit_txt_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@color/black"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn1_f_pass_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:backgroundTint="@color/transparent"
+            android:text="Forget Password?"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            />
+
+        <Button
+            android:id="@+id/btn2_log_in_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:backgroundTint="@color/black"
+            android:fontFamily="@font/titillium_web_light"
+            android:text="Log in"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:transitionName="login_btn_anim"
+            />
+        <Button
+            android:id="@+id/btn3_sign_up_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:text="New User? Sign Up"
+            android:textSize="20sp"
+            android:fontFamily="@font/titillium_web_light"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:transitionName="sign_up_btn_anim"
+            />
+
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/ltv"
+        app:layout_constraintTop_toBottomOf="@id/ll1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Developed by: Md Jahirul Islam\nDepartment of CST\nAnkang University, China."
+        android:textAlignment="center"
+        android:textColor="@color/grey"
+        android:layout_gravity="center"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

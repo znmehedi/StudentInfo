@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_grey"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgV1_ss"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/high_school_students"
+        app:layout_constraintVertical_bias="0.25"
+        android:transitionName="logo_anim"
+        />
+    <TextView
+        android:id="@+id/tv1_ss"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student Info"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/gameria"
+        app:layout_constraintVertical_bias="0.58"
+        app:layout_constraintHorizontal_bias="0.8"
+        android:transitionName="text_anim"
+        />
+    <TextView
+        android:id="@+id/tv2_ss"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Md Jahirul Islam"
+        android:textSize="40sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/rondo_ship_market"
+        app:layout_constraintVertical_bias="0.7"
+        app:layout_constraintHorizontal_bias="0.5"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

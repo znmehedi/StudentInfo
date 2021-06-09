@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Student Info</string>
+    <string name="noWhiteSpace">(?=\\s+$)</string>
+</resources>

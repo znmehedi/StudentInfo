@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".UserProfile"
+    >
+    <RelativeLayout
+        android:id="@+id/upr_part"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@color/sky"
+        android:padding="30dp"
+
+        >
+
+        <ImageView
+            android:id="@+id/usr_pic1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:src="@drawable/user1" />
+
+        <TextView
+            android:id="@+id/usr_name1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/usr_pic1"
+            android:fontFamily="@font/gameria"
+            android:includeFontPadding="false"
+            android:text="Mehedi Hasan"
+            android:textColor="@color/black"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/idnumber_id1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/usr_name1"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="-10dp"
+            android:layout_toRightOf="@id/usr_pic1"
+            android:fontFamily="@font/titillium_web_light"
+            android:includeFontPadding="false"
+            android:text="zn.mehedi"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/middle_linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-75dp"
+        android:layout_marginBottom="20dp"
+        >
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/middle_linearLayout_cardView1"
+            android:layout_width="95dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="10dp"
+            app:cardBackgroundColor="@color/sky"
+            >
+            <RelativeLayout
+                android:id="@+id/middle_linearLayout_relative1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+
+                >
+                <ImageView
+                    android:id="@+id/pic_middle_linearLayout_cardView1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/dollar1"
+                    android:adjustViewBounds="true"
+                    android:layout_centerHorizontal="true"
+                    />
+                <TextView
+                    android:id="@+id/txt1_middle_linearLayout_cardview1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/pic_middle_linearLayout_cardView1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:text="$100"
+                    android:fontFamily="@font/gameria"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:includeFontPadding="false"
+
+                    />
+                <TextView
+                    android:id="@+id/txt2_middle_linearLayout_cardview1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt1_middle_linearLayout_cardview1"
+                    android:layout_centerHorizontal="true"
+                    android:text="Balance"
+                    android:fontFamily="@font/titillium_web_light"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:includeFontPadding="false"
+
+                    />
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/middle_linearLayout_cardView2"
+            android:layout_width="95dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="10dp"
+            app:cardBackgroundColor="@color/sky"
+            >
+            <RelativeLayout
+                android:id="@+id/middle_linearLayout_relative2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+
+                >
+                <ImageView
+                    android:id="@+id/pic_middle_linearLayout_cardView2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/stair"
+                    android:adjustViewBounds="true"
+                    android:layout_centerHorizontal="true"
+                    />
+                <TextView
+                    android:id="@+id/txt1_middle_linearLayout_cardview2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/pic_middle_linearLayout_cardView2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:text="10"
+                    android:fontFamily="@font/gameria"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:includeFontPadding="false"
+
+                    />
+                <TextView
+                    android:id="@+id/txt2_middle_linearLayout_cardview2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt1_middle_linearLayout_cardview2"
+                    android:layout_centerHorizontal="true"
+                    android:text="Semester"
+                    android:fontFamily="@font/titillium_web_light"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:includeFontPadding="false"
+
+                    />
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/middle_linearLayout_cardView3"
+            android:layout_width="95dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="10dp"
+            app:cardBackgroundColor="@color/sky"
+            >
+            <RelativeLayout
+                android:id="@+id/middle_linearLayout_relative3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+
+                >
+                <ImageView
+                    android:id="@+id/pic_middle_linearLayout_cardView3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_fitness_center"
+                    android:adjustViewBounds="true"
+                    android:layout_centerHorizontal="true"
+                    />
+                <TextView
+                    android:id="@+id/txt1_middle_linearLayout_cardview3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/pic_middle_linearLayout_cardView3"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:text="10"
+                    android:fontFamily="@font/gameria"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:includeFontPadding="false"
+
+                    />
+                <TextView
+                    android:id="@+id/txt2_middle_linearLayout_cardview3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt1_middle_linearLayout_cardview3"
+                    android:layout_centerHorizontal="true"
+                    android:text="CGPA"
+                    android:fontFamily="@font/titillium_web_light"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:includeFontPadding="false"
+
+                    />
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-15dp"
+        >
+        <LinearLayout
+            android:id="@+id/down_linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:layout_marginTop="-35dp"
+
+            android:orientation="vertical"
+            >
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/down_ll_txt_input1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Full Name"
+                app:hintTextColor="@color/black"
+                android:layout_marginVertical="5dp"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/down_ll_edit_txt1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/transparent"
+                    android:drawableLeft="@drawable/ic_insert_emoticon"
+                    android:drawablePadding="5dp"
+                    android:drawableTint="@color/black"
+                    android:text="Mehedi Hasan"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textCursorDrawable="@color/black"
+
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/down_ll_txt_input2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ID Number"
+                app:hintTextColor="@color/black"
+                android:layout_marginVertical="5dp"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/down_ll_edit_txt2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/transparent"
+                    android:drawableLeft="@drawable/ic_sort_by_alpha"
+                    android:drawablePadding="5dp"
+                    android:drawableTint="@color/black"
+                    android:text="181-15-11009"
+                    android:textColor="@color/black"
+                    android:inputType="none"
+                    android:textSize="15sp"
+                    android:textCursorDrawable="@color/black"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/down_ll_txt_input3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email Address"
+                app:hintTextColor="@color/black"
+                android:layout_marginVertical="5dp"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/down_ll_edit_txt3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/transparent"
+                    android:drawableLeft="@drawable/ic_email"
+                    android:drawablePadding="5dp"
+                    android:drawableTint="@color/black"
+                    android:text="zn.mehedi@gmail.com"
+                    android:textColor="@color/black"
+                    android:inputType="textEmailAddress"
+                    android:textSize="15sp"
+                    android:textCursorDrawable="@color/black"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/down_ll_txt_input4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone Number"
+                app:hintTextColor="@color/black"
+                android:layout_marginVertical="5dp"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/down_ll_edit_txt4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/transparent"
+                    android:drawableLeft="@drawable/ic_phone"
+                    android:drawablePadding="5dp"
+                    android:drawableTint="@color/black"
+                    android:text="+8801845003093"
+                    android:textColor="@color/black"
+                    android:inputType="phone"
+                    android:textSize="15sp"
+                    android:textCursorDrawable="@color/black"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/down_ll_txt_input5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+
+                app:passwordToggleTint="@color/black"
+                app:hintTextColor="@color/black"
+                android:layout_marginVertical="5dp"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/down_ll_edit_txt5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/transparent"
+                    android:drawableLeft="@drawable/ic_vpn_lock"
+                    android:drawablePadding="5dp"
+                    android:drawableTint="@color/black"
+                    android:text="caktus119"
+                    android:textColor="@color/black"
+                    android:textCursorDrawable="@color/black"
+                    android:textSize="15sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/down_ll_txt_input6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Balance"
+
+                app:passwordToggleTint="@color/black"
+                app:hintTextColor="@color/black"
+                android:layout_marginVertical="5dp"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/down_ll_edit_txt6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/transparent"
+                    android:drawableLeft="@drawable/dollar1"
+                    android:drawablePadding="5dp"
+                    android:drawableTint="@color/black"
+                    android:text="100"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textCursorDrawable="@color/black"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/down_ll_txt_input7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Semester"
+
+                app:passwordToggleTint="@color/black"
+                app:hintTextColor="@color/black"
+                android:layout_marginVertical="5dp"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/down_ll_edit_txt7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/transparent"
+                    android:drawableLeft="@drawable/stair"
+                    android:drawablePadding="5dp"
+                    android:drawableTint="@color/black"
+                    android:text="10"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textCursorDrawable="@color/black"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/down_ll_txt_input8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="CGPA"
+
+                app:passwordToggleTint="@color/black"
+                app:hintTextColor="@color/black"
+                android:layout_marginVertical="5dp"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/down_ll_edit_txt8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/transparent"
+                    android:drawableLeft="@drawable/ic_fitness_center"
+                    android:drawablePadding="5dp"
+                    android:drawableTint="@color/black"
+                    android:text="3.9"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textCursorDrawable="@color/black"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/up_update_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cornerRadius="10dp"
+                android:backgroundTint="@color/sky"
+                android:text="UPDATE"
+                android:textSize="20sp"
+                android:fontFamily="@font/gameria"
+                android:includeFontPadding="false"
+                android:textColor="@color/black"
+                />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/up_logout_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cornerRadius="10dp"
+                android:backgroundTint="@color/teal_200"
+                android:text="LOGOUT"
+                android:textSize="20sp"
+                android:fontFamily="@font/gameria"
+                android:includeFontPadding="false"
+                android:textColor="@color/black"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
